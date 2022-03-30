@@ -1,0 +1,19 @@
+=========== ENGLISH
+This is an hotel & flight reservation website
+
+This project is based on Jonas Schmedtmann's course on Udemy, it was a project where the goal was to master Flexbox
+
+- I used every property of Flexbox
+- I have created animations with @keyframes features of CSS
+- I have created variables in CSS
+- I have used SASS in this project and followed BEM method
+
+=========== FRENCH
+C'est un site de réservation de vol et d'hôtel
+
+Ce projet est basé sur une formation (de Jonas Schmedtmann) que j'ai réalisé sur Udemy et dont le but était de maîtriser Flexbox
+
+- J'ai utilisé toutes les propriétés de Flexbox
+- J'ai crée des animations avec la fonctionnalités @keyframes de CSS
+- J'ai crée des variables CSS
+- J'ai utilisé SASS dans ce projet et utilisé la méthode BEM
