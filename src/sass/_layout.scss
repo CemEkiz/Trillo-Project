@@ -1,101 +1,110 @@
-.container {
-	max-width: 120rem;
-	margin: 8rem auto;
-	background-color: var(--color-grey-light-1);
-	box-shadow: var(--shadow-dark);
-	// test
-	min-height: 50rem;
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-	@media only screen and (max-width: $bp-large) {
-		margin: 0;
-		max-width: 100%;
-		width: 100%;
-	}
+.container {
+  max-width: 120rem;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .header {
-	height: 7rem;
-	background-color: var(--color-white);
-	border-bottom: var(--line);
+  height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: var(--line);
 
-	// margin: 10rem 0;
-	// padding: 4rem 0;
+  // margin: 10rem 0;
+  // padding: 4rem 0;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-	@media only screen and (max-width: $bp-smallest) {
-		flex-wrap: wrap;
-		height: 11rem;
-		align-content: space-around;
-	}
+  @media only screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
 }
 
 .content {
-	display: flex;
+  display: flex;
 
-	@media only screen and (max-width: $bp-medium) {
-		flex-flow: column;
-	}
+  @media only screen and (max-width: $bp-medium) {
+    flex-flow: column;
+  }
 }
 
 .sidebar {
-	background-color: var(--color-grey-dark-1);
+  background-color: var(--color-grey-dark-1);
 
-	// Étant donné qu'on a donné une valeur en % à flex-basis, on peut laisser flex-shrink à 0 mais si on avait donné une valeur en px ou rem à flex-basis il aurait fallu définir une valeur à flex-shrink autre que 0
-	// flex-grow: 0 | flex-shrink: 0 | flex-basis: 18%
-	flex: 0 0 18%;
+  // Étant donné qu'on a donné une valeur en % à flex-basis, on peut laisser flex-shrink à 0 mais si on avait donné une valeur en px ou rem à flex-basis il aurait fallu définir une valeur à flex-shrink autre que 0
+  // flex-grow: 0 | flex-shrink: 0 | flex-basis: 18%
+  flex: 0 0 18%;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
-	// Ici on demande à cet item d'occuper toute la place restante dans le flex container
-	// flex-grow: 1 | flex-shrink: 0 | flex-basis: 0
-	flex: 1;
+  // Ici on demande à cet item d'occuper toute la place restante dans le flex container
+  // flex-grow: 1 | flex-shrink: 0 | flex-basis: 0
+  flex: 1;
 
-	background-color: var(--color-white);
+  background-color: var(--color-white);
 }
 
 .detail {
-	display: flex;
-	padding: 4.5rem;
-	background-color: var(--color-grey-light-1);
-	border-bottom: var(--line);
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
 
-	@media only screen and (max-width: $bp-medium) {
-		padding: 3rem;
-	}
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
 
-	@media only screen and (max-width: $bp-small) {
-		flex-direction: column;
-	}
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 }
 
 .description {
-	background-color: #fff;
-	box-shadow: var(--shadow-light);
-	padding: 3rem;
-	margin-right: 4.5rem;
-	flex: 0 0 60%;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-right: 4.5rem;
+  flex: 0 0 60%;
 
-	@media only screen and (max-width: $bp-medium) {
-		padding: 2rem;
-		margin-right: 3rem;
-	}
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 
-	@media only screen and (max-width: $bp-medium) {
-		margin-right: 0;
-		margin-bottom: 3rem;
-	}
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
